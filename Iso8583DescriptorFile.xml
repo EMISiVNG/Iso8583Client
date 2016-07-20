@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FileFormat hasHeader="true" hasTrailer="true" delimiter="" type="iso8583">
+  <record id="isorecord" bitsets="">
+    <field max="0" datatype="fixed" index="-1" size="2"  	name="TCP Added Content Length Field" 		id="ContentLength"/>
+    <field max="0" datatype="fixed" index="-2" size="4"  	name="Message Type Identifier" 		id="MTI"/>
+    <field max="9999" datatype="bitmap" index="0" size="16"  	name="Message Availability Bitmap" 		id="MessageBitmap"/>
+
+    <field max="19" datatype="variable" index="2" size="2"  	name="Primary account number (PAN)" 		id="PAN"/>
+    <field max="0" datatype="fixed" index="3" size="6"  	name="Processing code" 						id="ProcessingCode"/>
+    <field max="0" datatype="fixed" index="4" size="12"  	name="Amount, transaction" 					id="AmountTransaction"/>
+    <field max="0" datatype="fixed" index="5" size="12"  	name="Amount, settlement" 					id="AmountSettlement"/>
+    <field max="22" datatype="fixed" index="6" size="0" name="dummy17" id="dummy17"/>
+    <field max="0" datatype="fixed" index="7" size="10"  	name="Transmission date &amp; time" 		id="TransmissionDateTime" />
+    <field max="22" datatype="fixed" index="8" size="0" name="dummy8" id="dummy8"/>
+    <field max="0" datatype="fixed" index="9" size="8"  	name="Conversion rate, settlement" 			id="ConversionRateSettlement" />
+    <field max="22" datatype="fixed" index="10" size="0" name="dummy10" id="dummy10"/>
+    <field max="0" datatype="fixed" index="11" size="6"  	name="System trace audit number" 			id="SystemTraceAuditNumber" />
+    <field max="0" datatype="fixed" index="12" size="6"  	name="Time, local transaction (hhmmss)" 	id="TimeLocalTransaction" />
+    <field max="0" datatype="fixed" index="13" size="4"  	name="Date, local transaction (MMDD)" 		id="DateLocalTransaction" />
+    <field max="0" datatype="fixed" index="14" size="4"  	name="Date, expiration" 					id="DateExpiration" />
+    <field max="0" datatype="fixed" index="15" size="4"  	name="Date, settlement" 					id="DateSettlement" />
+    <field max="0" datatype="fixed" index="16" size="4"  	name="Date, conversion" 					id="DateConversion" />
+    <field max="22" datatype="fixed" index="17" size="0" name="dummy17" id="dummy17"/>
+    <field max="0" datatype="fixed" index="18" size="4"  	name="Merchant type" 						id="MerchantType" />
+    <field max="22" datatype="fixed" index="19" size="0" name="dummy19" id="dummy19"/>
+    <field max="22" datatype="fixed" index="20" size="0" name="dummy20" id="dummy20"/>
+    <field max="22" datatype="fixed" index="21" size="0" name="dummy21" id="dummy21"/>
+    <field max="0" datatype="fixed" index="22" size="3"  	name="Point of service entry mode" 			id="PointOfServiceEntryMode" />
+    <field max="0" datatype="fixed" index="23" size="3"  	name="Card sequence number" 		id="Cardsequencenumber" />
+    <field max="22" datatype="fixed" index="24" size="0" name="dummy24" id="dummy24"/>
+    <field max="0" datatype="fixed" index="25" size="2"  	name="Point of service condition code" 		id="PointOfServiceConditionCode" />
+    <field max="0" datatype="fixed" index="26" size="2"  	name="Point of service capture code" 		id="PointOfServiceCaptureCode" />
+    <field max="0" datatype="fixed" index="27" size="1"  	name="Authorizing identification response length" id="AuthorizingIdentificationResponseLength" />
+    <field max="0" datatype="fixed" index="28" size="9" 	name="Amount, transaction fee" 						id="AmountTransactionFee" />
+    <field max="0" datatype="fixed" index="29" size="9"  	name="Amount, settlement fee" 						id="AmountTettlementFee" />
+    <field max="0" datatype="fixed" index="30" size="9"  	name="Amount, transaction processing fee" 			id="AmountTransactionProcessingFee" />
+    <field max="0" datatype="fixed" index="31" size="9"  	name="Amount, settlement processing fee" 			id="AmountSettlementProcessingFee" />
+    <field max="11" datatype="variable" index="32" size="2"  name="Acquiring institution identification code" 	id="AcquiringInstitutionIdentificationCode" />
+    <field max="11" datatype="variable" index="33" size="2"  name="Forwarding institution identification code" 	id="ForwardingInstitutionIdentificationCode" />
+    <field max="22" datatype="fixed" index="34" size="0" name="dummy34" id="dummy34"/>
+    <field max="37" datatype="variable" index="35" size="2"  name="Track 2 data" id="Track2Data" />
+    <field max="22" datatype="fixed" index="36" size="0" name="dummy36" id="dummy36"/>
+    <field max="0" datatype="fixed" index="37" size="12"  	name="Retrieval reference number" 				id="RetrievalReferenceNumber" />
+    <field max="0" datatype="fixed" index="38" size="6"  		name="Authorization identification response" 	id="AuthorizationIdentificationResponse" />
+    <field max="0" datatype="fixed" index="39" size="2"  		name="Response code" 			id="ResponseCode" />
+    <field max="0" datatype="fixed" index="40" size="3"  		name="Service restriction code" id="ServiceRestrictionCode" />
+    <field max="0" datatype="fixed" index="41" size="8"  		name="Card acceptor terminal identification" 	id="CardAcceptorTerminalIdentification" />
+    <field max="0" datatype="fixed" index="42" size="15"  	name="Card acceptor identification code" 		id="CardAcceptorIdentificationCode" />
+    <field max="0" datatype="fixed" index="43" size="40"  	name="Card acceptor name/location (1-23 address 24-36 city 37-38 state 39-40 country)" id="CardAcceptorName" />
+    <field max="25" datatype="variable" index="44" size="2"  	name="Additional response data" id="AdditionalResponseData" />
+    <field max="76" datatype="variable" index="45" size="2"  	name="Track 1 data" 			id="Track1data" />
+    <field max="22" datatype="fixed" index="46" size="0" name="dummy46" id="dummy46"/>
+    <field max="22" datatype="fixed" index="47" size="0" name="dummy47" id="dummy47"/>
+    <field max="999" datatype="variable" index="48" size="3"  	name="Additional data - private" 	id="AdditionalDataPrivate" />
+    <field max="0" datatype="fixed" index="49" size="3" 	name="Currency code, transaction" 	id="CurrencyCodeTransaction" />
+    <field max="0" datatype="fixed" index="50" size="3" 	name="Currency code, settlement" 	id="CurrencyCodeSettlement" />
+    <field max="22" datatype="fixed" index="51" size="0" name="dummy51" id="dummy51"/>
+    <field max="0" datatype="fixed" index="52" size="8" 	name="Personal identification number data"	id="PersonalIdentificationNumberData" />
+    <field max="0" datatype="fixed" index="53" size="48"  	name="Security related control information" id="SecurityRelatedControlInformation" />
+    <field max="120" datatype="variable" index="54" size="3" 	name="Additional Amounts" id="AdditionalAmounts" />
+    <field max="22" datatype="fixed" index="55" size="0" name="dummy55" id="dummy55"/>
+    <field max="4" datatype="variable" index="56" size="3"  	name="Message Response Code" id="MessageResponseCode" />
+    <field max="3" datatype="variable" index="57" size="3"  	name="Authorization life cycle code" id="Authorizationlifecyclecode" />
+    <field max="11" datatype="variable" index="58" size="3"  	name="Authorizing Agent Id Code" id="AuthorizingAgentIdCode" />
+    <field max="255" datatype="variable" index="59" size="3"  	name="Echo Data" id="EchoData" />
+
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    
+    <field max="0" datatype="fixed" index="66" size="1" 		name="Settlement code"  id="SettlementCode" />
+    <field max="0" datatype="fixed" index="67" size="2" 		name="Extended paymentcode" id="ExtendedPaymentcode" />
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="0" datatype="fixed" index="70" size="3" 		name="Network management information code" id="NetworkManagementInformationCode" />
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="0" datatype="fixed" index="73" size="6" 		name="Date, action (YYMMDD)" id="DateAction" />
+    <field max="0" datatype="fixed" index="74" size="10" 	name="Credits, number" 			id="CreditsNumber" />
+    <field max="0" datatype="fixed" index="75" size="10" 	name="Credits, reversal number" id="CreditsReversalNumber" />
+    <field max="0" datatype="fixed" index="76" size="10" 	name="Debits, number" 			id="DebitsNumber" />
+    <field max="0" datatype="fixed" index="77" size="10" 	name="Debits, reversal number" 	id="DebitsReversalNumber" />
+    <field max="0" datatype="fixed" index="78" size="10" 	name="Transfer number" 			id="TransferNumber" />
+    <field max="0" datatype="fixed" index="79" size="10" 	name="Transfer, reversal number" id="TransferReversalNumber" />
+    <field max="0" datatype="fixed" index="80" size="10" 	name="Inquiries number" 			id="InquiriesNumber" />
+    <field max="0" datatype="fixed" index="81" size="10" 	name="Authorizations, number" 		id="AuthorizationsNumber" />
+    <field max="0" datatype="fixed" index="82" size="12" 	name="Credits, processing fee amount" 	id="CreditsProcessingFeeAmount" />
+    <field max="0" datatype="fixed" index="83" size="12" 	name="Credits, transaction fee amount" 	id="CreditsTransactionFeeAmount" />
+    <field max="0" datatype="fixed" index="84" size="12" 	name="Debits, processing fee amount" 	id="DebitsProcessingFeeAmount" />
+    <field max="0" datatype="fixed" index="85" size="12" 	name="Debits, transaction fee amount" 	id="DebitsTransactionFeeAmount" />
+    <field max="0" datatype="fixed" index="86" size="16" 	name="Credits, amount" 			id="CreditsAmount" />
+    <field max="0" datatype="fixed" index="87" size="16" 	name="Credits, reversal amount" id="CreditsReversalAmount" />
+    <field max="0" datatype="fixed" index="88" size="16" 	name="Debits, amount" 			id="DebitsAmount" />
+    <field max="0" datatype="fixed" index="89" size="16" 	name="Debits, reversal amount" 	id="DebitsReversalAmount" />
+    <field max="0" datatype="fixed" index="90" size="42" 	name="Original data elements"  	id="OriginalDataElements" >
+      <field max="0" datatype="fixed" index="90.1" size="4"  offset="1"		name="Original message type" 	id="Original message type" />
+      <field max="0" datatype="fixed" index="90.2" size="6"  offset="5"	  name="Original systems trace audit number" 	id="Originalsystemstraceauditnumber" />
+      <field max="0" datatype="fixed" index="90.3" size="10" offset="11"	name="Original transmission date and time" 	id="Originaltransmissiondateandtime" />
+      <field max="0" datatype="fixed" index="90.4" size="11" offset="21"	name="Original acquirer institution ID code" 	id="OriginalacquirerinstitutionIDcode" />
+      <field max="0" datatype="fixed" index="90.5" size="11" offset="32"	name="Original forwarding institution ID code" 	id="OriginalforwardinginstitutionIDcode" />
+    </field>
+    <field max="0" datatype="fixed" index="91" size="1" 		name="File update code" 	id="FileUpdateCode" />
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="0" datatype="fixed" index="95" size="42" 		name="Replacement amounts" 	id="ReplacementAmounts" >
+        <field max="0" datatype="fixed" index="95.1" size="12" offset="1"		name="Actual amount, Transaction" 	id="ActualAmountTransaction" />
+        <field max="0" datatype="fixed" index="95.2" size="12" offset="13"	name="Actual amount, Settlement" 	id="ActualAmountSettlement" />
+        <field max="0" datatype="fixed" index="95.3" size="9" offset="25"	name="Actual amount, Transaction fee" 	id="ActualAmountTransactionFee" />
+        <field max="0" datatype="fixed" index="95.4" size="9" offset="34"	name="Actual amount, Settlement fee" 	id="ActualAmountSettlementFee" />
+    </field>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="0" datatype="fixed" index="97" size="17" 	name="Amount, net settlement" 	id="AmountNetSettlement" />
+    <field max="0" datatype="fixed" index="98" size="25" name="Payee" 					id="Payee" />
+    
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="11" datatype="variable" index="100" size="2"  	name="Receiving institution identification code" id="ReceivingInstitutionIdentificationCode" />
+    <field max="17" datatype="variable" index="101" size="2"  	name="File name" id="FileName" />
+    <field max="28" datatype="variable" index="102" size="2"  	name="Account identification 1" id="AccountIdentification1" />
+    <field max="28" datatype="variable" index="103" size="2"  	name="Account identification 2" id="AccountIdentification2" />
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="10" datatype="variable" index="118" size="3"  	name="Payments, Number" id="PaymentsNumber" />
+    <field max="10" datatype="variable" index="119" size="3"  	name="Payments, Reversal Number" id="PaymentsReversalNumber" />
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="15" datatype="variable" index="123" size="3"  	name="POS Data Code" id="POSDataCode" >
+        <field max="0" datatype="fixed" index="123.1" size="1" offset="1"	name="Card Data Input Capability" 	id="CardDataInputCapability" />
+        <field max="0" datatype="fixed" index="123.2" size="1" offset="2"	name="Cardholder Authentication Capability" 	id="CardholderAuthenticationCapability" />
+        <field max="0" datatype="fixed" index="123.3" size="1" offset="3"	name="Card Capture Capability" 	id="CardCaptureCapability" />
+        <field max="0" datatype="fixed" index="123.4" size="1" offset="4"	name="Operating Environment" 	id="OperatingEnvironment" />
+        <field max="0" datatype="fixed" index="123.5" size="1" offset="5"	name="Cardholder Is Present" 	id="CardholderIsPresent" />
+        <field max="0" datatype="fixed" index="123.6" size="1" offset="6"	name="Card Is Present" 	id="CardIsPresent" />
+        <field max="0" datatype="fixed" index="123.7" size="1" offset="7"	name="Card Data Input Mode" 	id="CardDataInputMode" />
+        <field max="0" datatype="fixed" index="123.8" size="1" offset="8"	name="Cardholder Authentication Method" 	id="CardholderAuthenticationMethod" />
+        <field max="0" datatype="fixed" index="123.9" size="1" offset="9"	name="Cardholder Authentication Entity" 	id="CardholderAuthenticationEntity" />
+        <field max="0" datatype="fixed" index="123.10" size="1" offset="10"	name="Card data Output Capability" 	id="CardDataOutputCapability" />
+        <field max="0" datatype="fixed" index="123.11" size="1" offset="11"	name="Terminal Output Capability" 	id="TerminalOutputCapability" />
+        <field max="0" datatype="fixed" index="123.12" size="1" offset="12"	name="PIN Capture Capability" 	id="PINCaptureCapability" />
+        <field max="0" datatype="fixed" index="123.13" size="1" offset="13"	name="Terminal Operator" 	id="TerminalOperator" />
+        <field max="0" datatype="fixed" index="123.14" size="2" offset="14"	name="Terminal Type" 	id="TerminalType" />
+    </field>
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="40" datatype="variable" index="125" size="3"  	name="Network Management Information" id="NetworkManagementInformation" />
+    
+    <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    <field max="999999" datatype="variable" index="127" size="6"  	name="Postillion Private Field" id="Postillion Private Field" >
+      <field max="0" datatype="bitmap" index="127.1" size="8" name="Bitmap Field" id="BitmapField" />
+      <field max="32" datatype="variable" index="127.2" size="2" name="Switch Key" id="SwitchKey" />
+      <field max="0" datatype="fixed" index="127.3" size="48"  	name="Routing information" id="Routinginformation" />
+      <field max="0" datatype="fixed" index="127.4" size="22"  	name="POS Data" id="POSData" />
+      <field max="0" datatype="fixed" index="127.5" size="73"  	name="Service station data" id="Servicestationdata" />
+      <field max="0" datatype="fixed" index="127.6" size="2"  	name="Authorization profile" id="Authorizationprofile" />
+      <field max="50" datatype="variable" index="127.7" size="2"  	name="Check data" id="Checkdata" />
+      <field max="999" datatype="variable" index="127.8" size="3"  	name="Retention data" id="Retentiondata" />
+      <field max="255" datatype="variable" index="127.9" size="3"  	name="Additional node data" id="Additionalnodedata" />
+      <field max="0" datatype="fixed" index="127.10" size="3"  	  name="CVV2" id="CVV2" />
+      <field max="32" datatype="variable" index="127.11" size="2"  name="Original Key" id="OriginalKey" />
+      <field max="25" datatype="variable" index="127.12" size="2"  name="Terminal owner" id="Terminalowner" />
+      <field max="0" datatype="fixed" index="127.13" size="17"  	name="POS geographical data" id="POSgeographicaldata" />
+      <field max="0" datatype="fixed" index="127.14" size="8"  	  name="Sponsor Bank" id="SponsorBank" />
+      <field max="29" datatype="variable" index="127.15" size="2"  name="Address verification data" id="Addressverificationdata" />
+      <field max="0" datatype="fixed" index="127.16" size="1"  	  name="Address verification result" id="Addressverificationresult" />
+      <field max="50" datatype="variable" index="127.17" size="2"  name="Cardholder information" id="Cardholderinformation" />
+      <field max="50" datatype="variable" index="127.18" size="2"  name="Validation data" id="Validationdata" />
+      <field max="0" datatype="fixed" index="127.19" size="31"  	name="Bank details" id="Bankdetails" />
+      <field max="0" datatype="fixed" index="127.20" size="8"  	  name="Originator / Authorization data settlement" id="OriginatorAuthorizationdatasettlement" />
+      <field max="12" datatype="variable" index="127.21" size="2"  name="Record ID" id="RecordID" />
+      <field max="99999" datatype="variable" index="127.22" size="5"  name="Structured data" id="Structureddata" />
+      <field max="0" datatype="fixed" index="127.23" size="253"  	name="Payee name and address" id="Payeenameandaddress" />
+      <field max="28" datatype="variable" index="127.24" size="2"  name="Payer account" id="Payeraccount" />
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="12" datatype="variable" index="127.26" size="2"  name="Original Node" id="OriginalNode" />
+      <field max="0" datatype="fixed" index="127.27" size="1"  	  name="Card verification result" id="Cardverificationresult" />
+      <field max="0" datatype="fixed" index="127.28" size="4"  	  name="American Express Card Identification" id="AmericanExpressCardIdentification" />
+      <field max="0" datatype="fixed" index="127.29" size="40"  	name="3D Secure data" id="3DSecuredata" />
+      <field max="0" datatype="fixed" index="127.30" size="1"  	  name="3D Secure result" id="3DSecureresult" />
+      <field max="11" datatype="variable" index="127.31" size="2"  name="Issuer network ID" id="IssuernetworkID" />
+      <field max="33" datatype="variable" index="127.32" size="2"  name="UCAF Data" id="UCAFData" />
+      <field max="0" datatype="fixed" index="127.33" size="4"  	  name="Extension Transaction Type" id="ExtensionTransactionType" />
+      <field max="0" datatype="fixed" index="127.34" size="2"  	  name="Account Type Qualifiers" id="AccountTypeQualifiers" />
+      <field max="11" datatype="variable" index="127.35" size="2"  name="Aquirer Network ID" id="AccountNetworkID" />
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="0" datatype="fixed" index="127.39" size="2"  	  name="Original Response Code" id="OriginalResponseCode" />
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+      <field max="22" datatype="fixed" index="" size="0" name="dummy" id="dummy"/>
+    </field>
+    <field max="0" datatype="fixed" index="128" size="8" 	name="Message authentication cardholder" id="MessageAuthenticationCardholder" />
+  </record>
+</FileFormat>
+
